@@ -78,7 +78,7 @@ class RBTree:
                     uncle.color = BLACK
                     node.parent.color = BLACK
                     grandparent.color = RED
-
+                    node = grandparent
             else: # если родитель нового узла правый сын
                 pass
         if self.root.color == RED:
